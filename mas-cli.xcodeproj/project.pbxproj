@@ -346,6 +346,7 @@
 			children = (
 				F8FB715520F2B41400F56FDC /* Info.plist */,
 				F8FB715420F2B41400F56FDC /* MasKit.h */,
+				B523911521A92018005769DF /* MasKit.pch */,
 			);
 			path = MasKit;
 			sourceTree = "<group>";
@@ -833,6 +834,7 @@
 				);
 				FRAMEWORK_VERSION = A;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PREFIX_HEADER = MasKit.pch;
 				INFOPLIST_FILE = MasKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -871,6 +873,7 @@
 				);
 				FRAMEWORK_VERSION = A;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PREFIX_HEADER = MasKit.pch;
 				INFOPLIST_FILE = MasKit/Info.plist;
 				INSTALL_PATH = /Frameworks;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
