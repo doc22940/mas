@@ -15,11 +15,10 @@ public class MasAppLibrary: AppLibrary {
 
     /// Array of installed software products.
     public lazy var installedApps: [SoftwareProduct] = {
-        var appList = [SoftwareProduct]()
         guard let products = softwareMap.allProducts()
-        else { return appList }
-        appList.append(contentsOf: products)
-        return products
+        else { return [] }
+
+        return products as [SoftwareProduct]
     }()
 
     /// Designated initializer
