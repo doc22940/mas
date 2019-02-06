@@ -15,10 +15,19 @@ public class MasAppLibrary: AppLibrary {
 
     /// Array of installed software products.
     public lazy var installedApps: [SoftwareProduct] = {
-        guard let products = softwareMap.allProducts()
+        guard var products = softwareMap.allProducts()
         else { return [] }
 
-        return products as [SoftwareProduct]
+        // Filter the list to customize the OS installers
+        return products.map { (product: SoftwareProduct) -> SoftwareProduct in
+            if product.appName.starts(with: "Install macOS") ||
+                product.appName.starts(with: "Install OS X") {
+                // macOS installer
+                let installer = MacOSInstallerProduct(fromProduct: product)
+                return installer
+            }
+            return product
+        }
     }()
 
     /// Designated initializer
