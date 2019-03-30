@@ -18,7 +18,7 @@ class ListCommandSpec: QuickSpec {
                 let list = ListCommand()
                 let result = list.run(ListCommand.Options())
                 print(result)
-//                expect(result).to(beSuccess())
+                expect(result).to(beSuccess())
             }
         }
     }
