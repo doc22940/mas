@@ -32,3 +32,10 @@ public protocol SoftwareProduct {
     var purchaseDate: Date? { get set }
     var storeFrontIdentifier: NSNumber? { get set }
 }
+
+extension SoftwareProduct {
+    /// Determines whether this product is a macOS installer.
+    var isMacosInstaller: Bool {
+        return appName.starts(with: "Install macOS") || appName.starts(with: "Install OS X")
+    }
+}
