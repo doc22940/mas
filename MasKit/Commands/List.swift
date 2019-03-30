@@ -32,7 +32,7 @@ public struct ListCommand: CommandProtocol {
             return .success(())
         }
         for product in products {
-            let identifier = product.itemIdentifier ?? 0
+            let identifier = product.itemIdentifier
             print("\(identifier) \(product.appName) (\(product.bundleVersion))")
         }
         return .success(())
