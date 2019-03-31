@@ -36,7 +36,7 @@ class MacOSSpec: QuickSpec {
                 }
                 it("has a description") {
                     expect(macos.description) ==
-                    "Mojave 10.14 (1398502828) https://itunes.apple.com/us/app/macos-mojave/id1398502828?mt=12"
+                        "Mojave 10.14 (1398502828) https://itunes.apple.com/us/app/macos-mojave/id1398502828?mt=12"
                 }
             }
             it("can be found by token") {

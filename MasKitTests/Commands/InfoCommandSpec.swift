@@ -80,14 +80,14 @@ class InfoCommandSpec: QuickSpec {
                 )
 
                 let expectedOutput = """
-                    Install macOS Mojave  [0.0]
-                    By: Apple Inc.
-                    Released:
-                    Minimum OS:
-                    Size: Zero KB
-                    From: https://itunes.apple.com/us/app/macos-mojave/id1398502828?mt=12
+                Install macOS Mojave  [0.0]
+                By: Apple Inc.
+                Released:
+                Minimum OS:
+                Size: Zero KB
+                From: https://itunes.apple.com/us/app/macos-mojave/id1398502828?mt=12
 
-                    """
+                """
 
                 storeSearch.apps[searchResult.trackId] = searchResult
                 let output = OutputListener()

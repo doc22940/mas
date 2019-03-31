@@ -53,12 +53,12 @@ enum MacOS: CaseIterable {
     /// Bundle identifier
     var bundleIdentifier: String {
         switch self {
-        case .mojave:       return "\(MacOS.bundleIdentifierBase).Mojave"
-        case .highSierra:   return "\(MacOS.bundleIdentifierBase).HighSierra"
-        case .sierra:       return "\(MacOS.bundleIdentifierBase).Sierra"     // UNCONFIRMED
-        case .elCapitan:    return "\(MacOS.bundleIdentifierBase).ElCapitan"  // UNCONFIRMED
-        case .yosemite:     return "\(MacOS.bundleIdentifierBase).Yosemite"
-        case .mavericks:    return "\(MacOS.bundleIdentifierBase).Mavericks"
+        case .mojave: return "\(MacOS.bundleIdentifierBase).Mojave"
+        case .highSierra: return "\(MacOS.bundleIdentifierBase).HighSierra"
+        case .sierra: return "\(MacOS.bundleIdentifierBase).Sierra" // UNCONFIRMED
+        case .elCapitan: return "\(MacOS.bundleIdentifierBase).ElCapitan" // UNCONFIRMED
+        case .yosemite: return "\(MacOS.bundleIdentifierBase).Yosemite"
+        case .mavericks: return "\(MacOS.bundleIdentifierBase).Mavericks"
         }
     }
 
