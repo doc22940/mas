@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+- 📥 Special support for macOS installer apps #229
 - 🐟 Command completions for fish shell #214  
   thanks, [@ylectric](https://github.com/ylectric)!
 - 🎨 SwiftFormat #215
